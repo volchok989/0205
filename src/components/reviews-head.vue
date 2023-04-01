@@ -3,18 +3,10 @@
     <div>
       <h2>Latest reviews</h2>
       <span
-        v-if='!toggleShowBtn'
         class='all-reviews'
         @click='emitClick'
       >
-        All reviews
-      </span>
-      <span
-        v-else
-        class='all-reviews'
-        @click='emitClick'
-      >
-        Collapse
+        {{ btnText }}
       </span>
     </div>
     <div>
@@ -49,15 +41,20 @@ export default {
       defaults: 0
     }
   },
+  computed: {
+    btnText () {
+      return this.isBtnToggled ? 'Collapse' : 'All reviews'
+    }
+  },
   data () {
     return {
-      toggleShowBtn: false
+      isBtnToggled: false
     }
   },
   methods: {
     emitClick () {
-      this.toggleShowBtn = !this.toggleShowBtn
-      this.$emit('all-reviews', this.toggleShowBtn)
+      this.isBtnToggled = !this.isBtnToggled
+      this.$emit('all-reviews', this.isBtnToggled)
     }
   }
 }
