@@ -91,7 +91,7 @@ h1 {
   background-color: #FFFBC8;
   border: 1px solid #DADADA;
   border-radius: 5px;
-  padding: 8px 45px;
+  padding: 8px 20px 8px 45px;
   margin-left: -45px;
   margin-bottom: 20px;
   @media (min-width: 489px) {

@@ -61,6 +61,7 @@ export default {
   padding-top: 28px;
   padding-bottom: 34px;
 }
+
 textarea {
   width: 100%;
   height: 65px;
@@ -71,15 +72,18 @@ textarea {
   border-radius: 1px;
   margin-bottom: 5px;
 }
+
 .error {
   text-align: center;
   color: red;
   margin-bottom: 18px;
   visibility: hidden;
 }
+
 .show-error {
   visibility: visible;
 }
+
 .btn-submit {
   background-color: #FDD639;
   border: 2px solid transparent;
@@ -88,9 +92,12 @@ textarea {
   margin: 0 auto;
   padding: 11px 90px;
   font-size: 16px;
+  font-family: 'PT Sans', serif;
   font-weight: 700;
   cursor: pointer;
   transition: .3s;
+  color: #333;
+
   &:hover {
     background-color: #FFF;
     border: 2px solid #FDD639;

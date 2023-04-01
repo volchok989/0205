@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('@/assets/fonts/PTSans-Bold.eot') format('embedded-opentype'),
+  url('@/assets/fonts/PTSans-Bold.woff2') format('woff2'),
+  url('@/assets/fonts/PTSans-Bold.woff') format('woff'),
+  url('@/assets/fonts/PTSans-Bold.svg') format('svg'),
+  url('@/assets/fonts/PTSans-Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
