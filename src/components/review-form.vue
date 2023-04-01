@@ -1,19 +1,21 @@
 <template>
-  <div class='container'>
-    <textarea v-model='reviewText'></textarea>
-    <p
-      :class='{"show-error": showError}'
-      class='error'
-    >
-      This field is required!
-    </p>
-    <button
-      class='btn-submit'
-      @click='addReview'
-      @keydown.ctrl.enter='addReview'
-    >
-      Send a message
-    </button>
+  <div class='form-section'>
+    <div class='container'>
+      <textarea v-model='reviewText'></textarea>
+      <p
+        :class='{"show-error": showError}'
+        class='error'
+      >
+        This field is required!
+      </p>
+      <button
+        class='btn-submit'
+        @click='addReview'
+        @keydown.ctrl.enter='addReview'
+      >
+        Send a message
+      </button>
+    </div>
   </div>
 </template>
 
@@ -56,8 +58,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.container {
+.form-section {
   background-color: #F2F2F2;
+}
+.container {
   padding-top: 28px;
   padding-bottom: 34px;
 }
