@@ -1,7 +1,10 @@
 <template>
   <div class='form-section'>
     <div class='container'>
-      <textarea v-model='reviewText'></textarea>
+      <textarea
+        v-model='reviewText'
+        @keydown.ctrl.enter='addReview'
+      ></textarea>
       <p
         :class='{"show-error": showError}'
         class='error'
@@ -11,7 +14,6 @@
       <button
         class='btn-submit'
         @click='addReview'
-        @keydown.ctrl.enter='addReview'
       >
         Send a message
       </button>
